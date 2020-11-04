@@ -1,4 +1,89 @@
+@font-face {
+  font-family: Jumpman;
+  src: url(../font/Jumpman.ttf);
+}
+@font-face {
+  font-family: SFUIDisplay-Medium;
+  src: url(../font/SFUIDisplay-Medium.ttf);
+}
 
 body {
-  background: url('../img/bg.png') repeat-xy;
+    color: black;
+    font-size: 12px;
+    font-family: SFUIDisplay-Medium, Arial, sans-serif;
+    padding: 0px;
+    margin:0px;
+}
+
+body, #sp-page {
+    min-height: 100vh;
+}
+
+#sp-page {
+    background: url(../img/bg.png) repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    
+    -webkit-justify-content: center;
+    -webkit-align-items: center;
+    -webkit-flex-wrap: wrap;
+    -webkit-flex-direction: column;
+    -moz-justify-content: center;
+    -moz-align-items: center;
+    -moz-flex-wrap: wrap;
+    -moz-flex-direction: column;
+}
+
+#sp-page section {
+    text-align: center;
+}
+
+#sp-page .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 10;
+    
+    -webkit-justify-content: center;
+    -webkit-align-items: center;
+    -webkit-flex-grow: 10;
+    -moz-justify-content: center;
+    -moz-align-items: center;
+    -moz-flex-grow: 10;
+}
+
+#sp-page .logo>img {
+    width: 95%;
+    max-width: 450px;
+    max-height: 100%;
+}
+
+#sp-page>section {
+    padding: 20px 0px 30px 0px;
+}
+
+#sp-page .mail {
+    color: rgb(247 236 218 / 1);
+    font-family: Jumpman;
+    font-size: 25px;
+    flex-grow: 0;
+    -moz-flex-grow: 0;
+    -webkit-flex-grow: 0;
+}
+
+#sp-page .mail a:link, #sp-page .mail a:visited {
+    display: block;
+    font-size: 50px;
+    color: #e5b666;
+    text-decoration: none;
+    transition: color 250ms;
+    -webkit-transition: color 250ms;
+    -moz-transition: color 250ms;
+}
+
+#sp-page .mail a:hover {
+    color: rgb(192 144 72);
 }
